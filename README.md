@@ -31,6 +31,18 @@ ATTRIBUTE_TYPES = {
 }
 ```
 
+If in you are displaying the password field on your forms, add this on you `UserController`
+```
+module Admin
+  class UsersController < Admin::ApplicationController
+    def update
+      params[:user].delete(:password) if params[:user][:password].blank?
+      super
+    end
+  end
+end
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/DisruptiveAngels/administrate-field-password.
