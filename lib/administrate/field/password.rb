@@ -4,7 +4,6 @@ require 'rails'
 module Administrate
   module Field
     class Password < Administrate::Field::Base
-      VERSION = '0.0.2'
       class Engine < ::Rails::Engine
       end
 

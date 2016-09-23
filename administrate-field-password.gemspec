@@ -1,10 +1,8 @@
 $:.push File.expand_path('../lib', __FILE__)
 
-require 'administrate/field/password'
-
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-password'
-  gem.version = Administrate::Field::Password::VERSION
+  gem.version = "0.0.2"
   gem.authors = ['Adrian Rangel']
   gem.email = ['adrian@disruptiveangels.com']
   gem.homepage = 'https://github.com/disruptiveangels/administrate-field-password'
@@ -17,5 +15,5 @@ Gem::Specification.new do |gem|
   gem.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
 
   gem.add_dependency 'administrate', '>= 0.2.0.rc1', '< 0.3.0'
-  gem.add_dependency 'rails', '~> 4.2'
+  gem.add_dependency 'rails', '>= 4.2'
 end
