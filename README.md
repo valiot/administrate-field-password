@@ -49,5 +49,5 @@ end
 Bug reports and pull requests are welcome on GitHub at https://github.com/DisruptiveAngels/administrate-field-password.
 
 ## License
-MIT License
+[MIT License](https://github.com/DisruptiveAngels/administrate-field-password/blob/better_readme/LICENSE)
 
