@@ -1,5 +1,5 @@
 # AdministrateFieldPassword
-
+[![Gem](https://img.shields.io/gem/v/administrate-field-password.svg)]()
 All you need to integrate Password with Administrate.
 
 ## Installation
@@ -12,7 +12,7 @@ gem 'administrate-field-password'
 
 And then execute:
 ```
-$ bundle
+$ bundle install
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ ATTRIBUTE_TYPES = {
 ```
 
 If in you are displaying the password field on your forms, add this on you `UserController`
-```
+```ruby
 module Admin
   class UsersController < Admin::ApplicationController
     def update
@@ -46,3 +46,7 @@ end
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/DisruptiveAngels/administrate-field-password.
+
+## License
+MIT License
+
