@@ -1,5 +1,6 @@
 # AdministrateFieldPassword
 [![Gem](https://img.shields.io/gem/v/administrate-field-password.svg)]()
+
 All you need to integrate Password with Administrate.
 
 ## Installation
