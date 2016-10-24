@@ -18,17 +18,17 @@ $ bundle install
 
 ## Usage
 
-In your Dashboard `ATTRIBUTE_TYPES` use the field type `PasswordField`. i.e.
+In your Dashboard `ATTRIBUTE_TYPES` use the field type `Field::Password`. i.e.
 ```ruby
 ATTRIBUTE_TYPES = {
-  images_files: FieldPassword
+  images_files: Field::Password
 }
 ```
 
 By default all `Password` options are false, you can set them to true like this:
 ```ruby
 ATTRIBUTE_TYPES = {
-  images_files: FieldPassword.with_options(direct: true, presigned: true, multiple: true)
+  images_files: Field::Password.with_options(direct: true, presigned: true, multiple: true)
 }
 ```
 
