@@ -8,7 +8,8 @@ All you need to integrate Password with Administrate.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'administrate-field-password'
+gem 'administrate-field-password',
+  :git => 'https://github.com/DisruptiveAngels/administrate-field-password'
 ```
 
 And then execute:
@@ -18,21 +19,28 @@ $ bundle install
 
 ## Usage
 
-In your Dashboard `ATTRIBUTE_TYPES` use the field type `Field::Password`. i.e.
+In your Dashboard use the field type `Field::Password` for your password attribute in `ATTRIBUTE_TYPES` i.e.
 ```ruby
 ATTRIBUTE_TYPES = {
-  images_files: Field::Password
+  user_password: Field::Password
 }
+```
+And then add the attribute to the `FORM_ATTRIBUTES` list.
+```ruby
+FORM_ATTRIBUTES = [
+    # Some other attributes...
+    :password
+  ].freeze
 ```
 
 By default all `Password` options are false, you can set them to true like this:
 ```ruby
 ATTRIBUTE_TYPES = {
-  images_files: Field::Password.with_options(direct: true, presigned: true, multiple: true)
+  user_password: Field::Password.with_options(direct: true, presigned: true, multiple: true)
 }
 ```
 
-If in you are displaying the password field on your forms, add this on you `UserController`
+If in you are displaying the password field on your forms, add this to your `UserController`
 ```ruby
 module Admin
   class UsersController < Admin::ApplicationController
