@@ -8,8 +8,7 @@ All you need to integrate Password with Administrate.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'administrate-field-password',
-  :git => 'https://github.com/DisruptiveAngels/administrate-field-password'
+gem 'administrate-field-password'
 ```
 
 And then execute:
@@ -29,7 +28,7 @@ And then add the attribute to the `FORM_ATTRIBUTES` list.
 ```ruby
 FORM_ATTRIBUTES = [
     # Some other attributes...
-    :password
+    :user_password
   ].freeze
 ```
 
