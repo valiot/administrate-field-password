@@ -32,13 +32,6 @@ FORM_ATTRIBUTES = [
   ].freeze
 ```
 
-By default all `Password` options are false, you can set them to true like this:
-```ruby
-ATTRIBUTE_TYPES = {
-  user_password: Field::Password.with_options(direct: true, presigned: true, multiple: true)
-}
-```
-
 If in you are displaying the password field on your forms, add this to your `UserController`
 ```ruby
 module Admin
