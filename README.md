@@ -18,21 +18,21 @@ $ bundle install
 
 ## Usage
 
-In your Dashboard `ATTRIBUTE_TYPES` use the field type `Field::Password`. i.e.
+In your Dashboard use the field type `Field::Password` for your password attribute in `ATTRIBUTE_TYPES` i.e.
 ```ruby
 ATTRIBUTE_TYPES = {
-  images_files: Field::Password
+  user_password: Field::Password
 }
 ```
-
-By default all `Password` options are false, you can set them to true like this:
+And then add the attribute to the `FORM_ATTRIBUTES` list.
 ```ruby
-ATTRIBUTE_TYPES = {
-  images_files: Field::Password.with_options(direct: true, presigned: true, multiple: true)
-}
+FORM_ATTRIBUTES = [
+    # Some other attributes...
+    :user_password
+  ].freeze
 ```
 
-If in you are displaying the password field on your forms, add this on you `UserController`
+If in you are displaying the password field on your forms, add this to your `UserController`
 ```ruby
 module Admin
   class UsersController < Admin::ApplicationController
