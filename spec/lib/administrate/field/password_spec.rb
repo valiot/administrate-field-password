@@ -8,7 +8,7 @@ describe Administrate::Field::Password do
 
       path = field.to_partial_path
 
-      expect(path).to eq("/field/password/#{page}")
+      expect(path).to eq("/fields/password/#{page}")
     end
   end
 end
