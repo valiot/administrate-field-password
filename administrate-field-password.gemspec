@@ -2,7 +2,7 @@ $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-password'
-  gem.version = "0.0.3"
+  gem.version = '0.0.4'
   gem.authors = ['Adrian Rangel']
   gem.email = ['adrian@disruptiveangels.com']
   gem.homepage = 'https://github.com/disruptiveangels/administrate-field-password'
